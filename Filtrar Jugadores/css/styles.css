@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    margin: 15px;
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+    background: #134E5E ;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E) ;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E) ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.alerta {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+}
+.error {
+    background-color: red;
+}
+
+

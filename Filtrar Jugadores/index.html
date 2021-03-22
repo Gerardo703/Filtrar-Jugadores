@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Jugadores</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <div class="contenedor">
+    <!--Selects para realizar los filtros-->
+    <form action="" id="buscador" class="m-5">
+        <h1 class="text-center mb-5">BUSCADOR DE JUGADORES</h1>
+        <div class="row">
+
+        <!--Selector de Ligas-->
+        <div class="col-4">   
+            <label for="">Ligas: </label>
+            <select class="form-select" aria-label="Default select example" id="liga">
+                <option value="" >Seleccione</option>
+                <option value="Premier League">Premier League</option>
+                <option value="La Liga BBVA">La Liga BBVA</option>
+                <option value="Campeonato Uruguayo">Campeonato Uruguayo</option>
+                <option value="Serie A">Serie A</option>
+                <option value="Bundesliga">Bundesliga</option>
+                <option value="Super Liga de Turquia">Super Liga de Turquia</option>
+                <option value="Super Liga Argentina">Super Liga Argentina</option>
+            </select>
+        </div> 
+
+        <div class="col-4">
+            <!--Selector de Equipos-->  
+            <label for="">Equipos: </label>
+                <select class="form-select" aria-label="Default select example" id="equipo">
+                <option value="" selected>Seleccione</option>
+                <option value="Manchester City">Manchester City</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Athletico de Madrid">Athletico de Madrid</option>
+                <option value="Manchester United">Manchester United</option>
+                <option value="Inter de Milán">Inter de Milán</option>
+                <option value="Internacional">Internacional</option>
+                <option value="CA Peñarol">CA Peñarol</option>
+                <option value="Nacional">Nacional</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="Real Madrid">Real Madrid</option>
+                <option value="Juventus">Juventus</option>
+                <option value="Bayern Munchen">Bayern Munchen</option>
+                <option value="Borussia Dortmund">Borussia Dortmund</option>
+                <option value="Galatasaray">Galatasaray</option>
+                <option value="River Plate">River Plate</option>
+            </select>
+        </div>
+
+        <div class="col-4">
+            <!--Selector de Pais-->  
+            <label for="">Paises: </label>
+                <select class="form-select" aria-label="Default select example" id="pais">
+                <option value="" >Seleccione</option>
+                <option value="Belgica">Belgica</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Chile">Chile</option>
+                <option value="Egipto">Egipto</option>
+                <option value="Francia">Francia</option>
+                <option value="Polonia">Polonia</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Colombia">Colombia</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <!--Selector de Tecnica Minima-->  
+            <label for="">Tecnica min: </label>
+                <select class="form-select" aria-label="Default select example" id="min">
+                <option value="" >Seleccione</option>
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+        
+        <div class="col-6">
+            <!--Selector de Tecnica Max-->  
+            <label for="">Tecnica max: </label>
+                <select class="form-select" aria-label="Default select example" id="max">
+                <option value="" >Seleccione</option>
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+
+        </div>
+    </form>  
+
+    <h1 class="text-center text-uppercase">Resultados</h1>
+    <div id="resultado"></div>  
+    <table class="table table-dark table-striped mt-3" id="tabla">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Pais</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Equipo</th>
+            <th scope="col">Liga</th>
+            <th scope="col">Técnica</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+
+      <div id="noresultado" class="m-5"></div>
+
+    </div>
+
+    
+
+    <script src="./js/db.js"></script>
+    <script src="./js/app.js"></script>
+
+    <!--Script Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+    
+   
+
+</body>
+</html>
