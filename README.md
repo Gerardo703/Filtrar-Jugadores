@@ -1,6 +1,6 @@
 # Filtrar-Jugadores
 
-<img src="https://img.shields.io/badge/-Javascript-black?style=plastic&logo=javascript"> <img src="https://img.shields.io/badge/-html-black?style=plastic&logo=html5"> <img src="https://img.shields.io/badge/-css-black?style=plastic&logo=css3" >
+<img src="https://img.shields.io/badge/-Javascript-black?style=plastic&logo=javascript" /> <img src="https://img.shields.io/badge/-html-black?style=plastic&logo=html5" /> <img src="https://img.shields.io/badge/-css-black?style=plastic&logo=css3" /> 
 
 Pryecto que simula un filtrado de datos mediante select:
 <ul>
